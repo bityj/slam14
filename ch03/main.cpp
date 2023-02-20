@@ -1,6 +1,11 @@
 #include <iostream>
+using namespace std;
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+#include<ctime>
+#include<Eigen/Core>
+#include<Eigen/Dense>
+using namespace Eigen;
+
+int main(){
+    printf("hello_world");
 }
