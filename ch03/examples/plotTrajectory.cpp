@@ -6,7 +6,7 @@
 using namespace std;
 using namespace Eigen;
 
-string trajectory_file = "/home/yj/slam14/ch03/examples/trajectory.txt";
+string trajectory_file = "../trajectory.txt";
 
 void DrawTrajectory(vector<Isometry3d, Eigen::aligned_allocator<Isometry3d>>);
 
