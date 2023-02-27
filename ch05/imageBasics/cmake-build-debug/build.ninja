@@ -73,6 +73,39 @@ build imageBasics: CXX_EXECUTABLE_LINKER__imageBasics_Debug CMakeFiles/imageBasi
   TARGET_FILE = imageBasics
   TARGET_PDB = imageBasics.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target undistortImage
+
+
+#############################################
+# Order-only phony target for undistortImage
+
+build cmake_object_order_depends_target_undistortImage: phony || CMakeFiles/undistortImage.dir
+
+build CMakeFiles/undistortImage.dir/undistortImage.cpp.o: CXX_COMPILER__undistortImage_Debug /home/yj/slam14/ch05/imageBasics/undistortImage.cpp || cmake_object_order_depends_target_undistortImage
+  DEP_FILE = CMakeFiles/undistortImage.dir/undistortImage.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  INCLUDES = -isystem /usr/local/include/opencv
+  OBJECT_DIR = CMakeFiles/undistortImage.dir
+  OBJECT_FILE_DIR = CMakeFiles/undistortImage.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target undistortImage
+
+
+#############################################
+# Link the executable undistortImage
+
+build undistortImage: CXX_EXECUTABLE_LINKER__undistortImage_Debug CMakeFiles/undistortImage.dir/undistortImage.cpp.o | /usr/local/lib/libopencv_dnn.so.3.4.16 /usr/local/lib/libopencv_highgui.so.3.4.16 /usr/local/lib/libopencv_ml.so.3.4.16 /usr/local/lib/libopencv_objdetect.so.3.4.16 /usr/local/lib/libopencv_shape.so.3.4.16 /usr/local/lib/libopencv_stitching.so.3.4.16 /usr/local/lib/libopencv_superres.so.3.4.16 /usr/local/lib/libopencv_videostab.so.3.4.16 /usr/local/lib/libopencv_calib3d.so.3.4.16 /usr/local/lib/libopencv_features2d.so.3.4.16 /usr/local/lib/libopencv_flann.so.3.4.16 /usr/local/lib/libopencv_photo.so.3.4.16 /usr/local/lib/libopencv_video.so.3.4.16 /usr/local/lib/libopencv_videoio.so.3.4.16 /usr/local/lib/libopencv_imgcodecs.so.3.4.16 /usr/local/lib/libopencv_imgproc.so.3.4.16 /usr/local/lib/libopencv_core.so.3.4.16
+  FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_dnn.so.3.4.16  /usr/local/lib/libopencv_highgui.so.3.4.16  /usr/local/lib/libopencv_ml.so.3.4.16  /usr/local/lib/libopencv_objdetect.so.3.4.16  /usr/local/lib/libopencv_shape.so.3.4.16  /usr/local/lib/libopencv_stitching.so.3.4.16  /usr/local/lib/libopencv_superres.so.3.4.16  /usr/local/lib/libopencv_videostab.so.3.4.16  /usr/local/lib/libopencv_calib3d.so.3.4.16  /usr/local/lib/libopencv_features2d.so.3.4.16  /usr/local/lib/libopencv_flann.so.3.4.16  /usr/local/lib/libopencv_photo.so.3.4.16  /usr/local/lib/libopencv_video.so.3.4.16  /usr/local/lib/libopencv_videoio.so.3.4.16  /usr/local/lib/libopencv_imgcodecs.so.3.4.16  /usr/local/lib/libopencv_imgproc.so.3.4.16  /usr/local/lib/libopencv_core.so.3.4.16
+  OBJECT_DIR = CMakeFiles/undistortImage.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = undistortImage
+  TARGET_PDB = undistortImage.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -107,7 +140,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/yj/slam14/ch05/imageBasics/cmake-build-debug
 
-build all: phony imageBasics
+build all: phony imageBasics undistortImage
 
 # =============================================================================
 # Built-in targets

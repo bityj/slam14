@@ -17,10 +17,9 @@ int main(int argc, char **argv){
 
     cout << "image width is: " << image.cols << ", height is: " << image.rows
          << ",channel is: " << image.channels() << endl;
-    cv::imshow("iamge", image);
+    cv::imshow("image", image);
     cv::waitKey(0);
 
-    cout << "***************" << image.type() << "*******************" << endl;
 
     if(image.type() != CV_8UC1 && image.type() != CV_8UC3){
         cout << "Please input a RGB pic or a greyscale pic." << endl;
@@ -42,7 +41,7 @@ int main(int argc, char **argv){
     cout << "遍历图像用时：" << time_used.count() << " 秒。" << endl;
 
     cv::Mat image_another = image;
-    image_another(cv::Rect(0, 0, 100, 100)).setTo(0);
+    image_another(cv::Rect(255, 0, 100, 100)).setTo(134);
     cv::imshow("image", image);
     cv::waitKey(0);
 

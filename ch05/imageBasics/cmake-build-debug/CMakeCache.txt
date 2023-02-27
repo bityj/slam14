@@ -225,6 +225,9 @@ LIBRARY_OUTPUT_PATH:PATH=
 //The directory containing a CMake configuration file for OPENCV.
 OPENCV_DIR:PATH=OPENCV_DIR-NOTFOUND
 
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=/usr/local/share/OpenCV
+
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=/home/yj/slam14/ch05/imageBasics/cmake-build-debug
 
@@ -233,6 +236,15 @@ Project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/home/yj/slam14/ch05/imageBasics
+
+//Value Computed by CMake
+imageBasics1_BINARY_DIR:STATIC=/home/yj/slam14/ch05/imageBasics/cmake-build-debug
+
+//Value Computed by CMake
+imageBasics1_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+imageBasics1_SOURCE_DIR:STATIC=/home/yj/slam14/ch05/imageBasics
 
 //Value Computed by CMake
 imageBasics_BINARY_DIR:STATIC=/home/yj/slam14/ch05/imageBasics/cmake-build-debug
