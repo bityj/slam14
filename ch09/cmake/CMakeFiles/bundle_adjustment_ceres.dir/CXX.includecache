@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yj/slambook2/ch9/SnavelyReprojectionError.h
+iostream
+-
+ceres/ceres.h
+/home/yj/slambook2/ch9/ceres/ceres.h
+rotation.h
+/home/yj/slambook2/ch9/rotation.h
+
+/home/yj/slambook2/ch9/bundle_adjustment_ceres.cpp
+iostream
+-
+ceres/ceres.h
+-
+common.h
+/home/yj/slambook2/ch9/common.h
+SnavelyReprojectionError.h
+/home/yj/slambook2/ch9/SnavelyReprojectionError.h
+
+/home/yj/slambook2/ch9/common.h
+
+/home/yj/slambook2/ch9/rotation.h
+algorithm
+-
+cmath
+-
+limits
+-
+
