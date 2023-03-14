@@ -27,5 +27,5 @@ target_link_libraries(pose_graph_g2o_lie
         g2o_core g2o_stuff
         ${CHOLMOD_LIBRARIES}
         ${Sophus_LIBRARIES}
-        )
+        fmt)
 
